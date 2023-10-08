@@ -1,0 +1,28 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    font-family: "Lexend Deca", sans-serif;
+  /* font-family: "Big Shoulders Display", cursive; */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-block-end: 10px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+footer a {
+  color: var(--soft-violet);
+}
