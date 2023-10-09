@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/html-css-only-mobile-first-IZkE6-O9Zf)
 - Live Site URL: [Live website](https://antoniomereu.github.io/3-column-preview-card-Antonio-Mereu/)
 
 ## My process
