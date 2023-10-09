@@ -27,12 +27,13 @@ Users should be able to:
 ## Desktop
 
 ![desktop design result](./design/desktop.png)
-![mobile design result](./design/mobile.png)
+![mobile design result 1](./design/mobile-1.png)
+![mobile design result 2](./design/mobile-2.png)
 
 ### Links
 
 - Solution URL: [Solution on Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Live website](https://your-live-site-url.com)
+- Live Site URL: [Live website](https://antoniomereu.github.io/3-column-preview-card-Antonio-Mereu/)
 
 ## My process
 
