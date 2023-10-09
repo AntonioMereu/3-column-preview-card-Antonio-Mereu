@@ -6,6 +6,9 @@
   /* Neutral */
   --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
   --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+  /*  */
+  --main-border-r: 0px;
 }
 
 * {
@@ -13,18 +16,20 @@
 }
 
 body {
+    position: relative;
   margin: 0;
   display: grid;
   place-items: center;
   min-height: 100vh;
-  min-height: 100dvh;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
+  margin-block: 88px;
   width: 87%;
-  padding-block: 88px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card {
@@ -33,6 +38,7 @@ main {
   justify-content: space-between;
   gap: 25px;
   padding: 48px;
+  flex: 1 1 150px;
 }
 
 .card * {
@@ -41,8 +47,8 @@ main {
 
 .card:nth-child(1) {
   background-color: var(--bright-orange);
-  border-start-start-radius: 10px;
-  border-start-end-radius: 10px;
+  border-start-start-radius: var(--main-border-r);
+  border-start-end-radius: var(--main-border-r);
 }
 
 .card:nth-child(1) button {
@@ -63,8 +69,8 @@ main {
 
 .card:nth-child(3) {
   background-color: var(--very-dark-cyan);
-  border-end-start-radius: 10px;
-  border-end-end-radius: 10px;
+  border-end-start-radius: var(--main-border-r);
+  border-end-end-radius: var(--main-border-r);
 }
 
 img {
@@ -87,21 +93,50 @@ button {
   border: none;
   background-color: var(--very-light-gray-background-headings-buttons);
   border-radius: 999px;
+  border: 2px solid transparent;
   height: 48px;
   width: 65%;
   font-size: 0.95rem;
+  transition: all 0.25s;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white !important;
 }
 
 footer {
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
   padding-block-end: 10px;
   width: 100%;
   font-size: 11px;
   text-align: center;
-  color: gray;
+  color: black;
 }
 
 footer a {
-  color: white;
+  color: var(--bright-orange);
+}
+
+@media screen and (min-width: 35em) {
+  main {
+    width: 64%;
+  }
+
+  .card:nth-child(1) {
+    border-start-end-radius: 0;
+    border-end-start-radius: var(--main-border-r);
+  }
+
+  .card:nth-child(3) {
+    border-start-end-radius: var(--main-border-r);
+    border-end-start-radius: 0;
+  }
+
+  button {
+    margin-block-start: 50px !important;
+  }
 }
